@@ -233,7 +233,8 @@ class Soal extends CI_Controller {
 
         $replace_wa = array(
             ' ' => '%20',
-            '"' => '%22'
+            '"' => '%22',
+            '#' => '%23'
         );
 
         $nama = str_replace(array_keys($replace_wa), $replace_wa, $this->input->post("nama"));
