@@ -9,7 +9,7 @@
                     <h2 class="card-title text-center mb-4"><?= $title?></h2>
                     <?php if( $this->session->flashdata('pesan') ) : ?>
                         <?= $this->session->flashdata('pesan')?>
-                        <p><b>Bahasa Inggris jadi mudah hanya di</b> <a href="https://bahasainggris.net/" target="_blank"><b>bahasainggris.net</b></a></p>
+                        <p><b>Bahasa Inggris jadi mudah hanya di</b> <a href="https://merryenglish.id/" target="_blank"><b>merryenglish.id</b></a></p>
                     <?php else: ?>
                         <div class="mb-2">
                             <label class="form-label">

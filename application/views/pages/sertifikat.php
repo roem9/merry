@@ -20,18 +20,24 @@
                                             <h5 class="m-0 mb-3 font-weight-bold text-dark">No. Sertifikat : </i><?= $no_doc?></h5>
                                         <!-- </div> -->
                                         <!-- <div class="card-body text-gray-900"> -->
-                                            <p>Nama : <?= ucwords(strtolower($nama))?></p>
-                                            <p>TTL : <?= $t4_lahir?>, <?= tgl_indo($tgl_lahir)?></p>
-                                            <p>Alamat : <?= ucwords(strtolower($alamat))?></p>
-                                            <p>Nilai Listening : <?= $istima?></p>
-                                            <p>Nilai Structure : <?= $tarakib?></p>
-                                            <p>Nilai Reading : <?= $qiroah?></p>
-                                            <p>Skor TOEFL : <?= round($skor)?></p>
-                                            <p>Tgl Tes : <?= tgl_indo($tgl_tes)?></p>
-                                            <p>Berlaku Sampai : <?= tgl_indo($tgl_berakhir)?></p>
+                                            <p>
+                                                Nama : <?= ucwords(strtolower($nama))?> <br>
+                                                TTL : <?= $t4_lahir?>, <?= tgl_indo($tgl_lahir)?><br>
+                                                Alamat : <?= ucwords(strtolower($alamat))?>
+                                            </p>
+                                            <p>
+                                                Nilai Listening : <?= $istima?><br>
+                                                Nilai Structure : <?= $tarakib?><br>
+                                                Nilai Reading : <?= $qiroah?><br>
+                                                Skor TOEFL : <?= round($skor)?>
+                                            </p>
+                                            <p>
+                                                Tgl Tes : <?= tgl_indo($tgl_tes)?><br>
+                                                Berlaku Sampai : <?= tgl_indo($tgl_berakhir)?>
+                                            </p>
                                             <p><small class="text-danger"><i>Catatan : Data diatas adalah data tes TOEFL peserta yang sebenar-benarnya. Dan tidak ada pengurangan dan penambahan nilai sedikitpun</i></small></p>
-                                            <p><b>Masih belum puas dengan skor TOEFL yang Anda dapatkan hari ini? Yuk Belajar TOEFL Online di</b> <a href="https://bahasainggris.net/" target="_blank"><b>bahasainggris.net</b></a></p>
-                                            <p><b>Bahasa Inggris jadi mudah hanya di</b> <a href="https://bahasainggris.net/" target="_blank"><b>bahasainggris.net</b></a></p>
+                                            <p><b>Masih belum puas dengan skor TOEFL yang Anda dapatkan hari ini? Yuk Belajar TOEFL Online di</b> <a href="https://merryenglish.id/" target="_blank"><b>merryenglish.id</b></a></p>
+                                            <p><b>Bahasa Inggris jadi mudah hanya di</b> <a href="https://merryenglish.id/" target="_blank"><b>merryenglish.id</b></a></p>
                                         </div>
                                     </div>
                                 <?php else :?>
