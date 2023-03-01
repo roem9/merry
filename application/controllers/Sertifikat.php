@@ -25,7 +25,7 @@ class Sertifikat extends CI_Controller {
             $peserta['tarakib'] = poin("Structure", $peserta['nilai_structure']);
             $peserta['qiroah'] = poin("Reading", $peserta['nilai_reading']);
             $peserta['tgl_tes'] = $tes['tgl_tes'];
-            $peserta['tgl_berakhir'] = date('Y-m-d', strtotime('+1 year', strtotime($tes['tgl_tes'])));
+            $peserta['tgl_berakhir'] = date('Y-m-d', strtotime('+2 year', strtotime($tes['tgl_tes'])));
 
             $peserta['link_foto'] = config();
 
