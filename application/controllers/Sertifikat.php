@@ -19,13 +19,13 @@ class Sertifikat extends CI_Controller {
             $peserta['nama'] = $peserta['nama'];
             $peserta['title'] = "Sertifikat ".$peserta['nama'];
             $peserta['t4_lahir'] = ucwords(strtolower($peserta['t4_lahir']));
-            $peserta['tahun'] = date('y', strtotime($tes['tgl_tes']));
-            $peserta['bulan'] = getRomawi(date('m', strtotime($tes['tgl_tes'])));
+            $peserta['tahun'] = date('y', strtotime($peserta['tgl_tes_peserta']));
+            $peserta['bulan'] = getRomawi(date('m', strtotime($peserta['tgl_tes_peserta'])));
             $peserta['istima'] = poin("Listening", $peserta['nilai_listening']);
             $peserta['tarakib'] = poin("Structure", $peserta['nilai_structure']);
             $peserta['qiroah'] = poin("Reading", $peserta['nilai_reading']);
-            $peserta['tgl_tes'] = $tes['tgl_tes'];
-            $peserta['tgl_berakhir'] = date('Y-m-d', strtotime('+2 year', strtotime($tes['tgl_tes'])));
+            $peserta['tgl_tes'] = $peserta['tgl_tes_peserta'];
+            $peserta['tgl_berakhir'] = date('Y-m-d', strtotime('+2 year', strtotime($peserta['tgl_tes_peserta'])));
 
             $peserta['link_foto'] = config();
 

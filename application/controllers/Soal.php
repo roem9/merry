@@ -225,6 +225,7 @@ class Soal extends CI_Controller {
             "nilai_structure" => $nilai_structure,
             "nilai_reading" => $nilai_reading,
             "text" => $text,
+            "tgl_tes_peserta" => date("Y-m-d")
         ];
 
         $this->Main_model->add_data("peserta_toefl", $data);
